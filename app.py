@@ -334,7 +334,6 @@ def show_team_page():
             "image": "https://raw.githubusercontent.com/Codeayu/MovieRecommendation/main/photos/jay.jpg",
             "social": {
                 "github": "https://github.com",
-                "website": "https://example.com"
             }
         },
         {
@@ -357,14 +356,15 @@ def show_team_page():
             st.markdown(f"""
             <div style="background: rgba(30, 30, 30, 0.8); border-radius: 12px; padding: 25px; margin-bottom: 20px; 
                         border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; transition: all 0.3s ease;">
-                <img src="{member['image']}" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; 
-                        border: 3px solid #6E44FF; margin: 0 auto 15px; display: block;">
+                <img src="{member['image']}" style="width: 160px; height: 160px; border-radius: 60%; object-fit: cover; 
+                        border: 3px solid var(--accent); margin: 0 auto 15px; display: block;">
                 <h3 style="margin-bottom: 5px; text-align: center;">{member['name']}</h3>
                 <p style="color: var(--accent); font-weight: 500; margin-bottom: 15px; text-align: center;">{member['role']}</p>
                 <p style="margin-bottom: 15px; text-align: center;">{member['bio']}</p>
                 <div style="display: flex; justify-content: center; gap: 10px;">
-                    {"".join([f'<a href="{link}" target="_blank" style="color: #6E44FF; font-size: 1.2rem; transition: all 0.3s ease;"><i class="fab fa-{platform}"></i></a>' 
-                            for platform, link in member['social'].items()])}
+                    {"".join([f'<a href="{link}" target="_blank" style="color: var(--light); font-size: 1.2rem; transition: all 0.3s ease;">'
+                              f'<img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/{platform}.svg" alt="{platform}" style="width: 24px; height: 24px; filter: invert(1);"></a>' 
+                              for platform, link in member['social'].items()])}
                 </div>
             </div>
             """, unsafe_allow_html=True)
