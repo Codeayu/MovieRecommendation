@@ -340,7 +340,7 @@ def show_team_page():
             "name": "Parth Mahore",
             "role": "Backend Developer",
             "bio": "Developed the API integrations and optimized server performance.",
-            "image": "https://randomuser.me/api/portraits/women/68.jpg",
+            "image": "https://raw.githubusercontent.com/Codeayu/MovieRecommendation/main/photos/WhatsApp%20Image%202025-04-06%20at%2016.08.18_06e71f80.jpg",
             "social": {
                 "github": "https://github.com",
                 "linkedin": "https://linkedin.com",
