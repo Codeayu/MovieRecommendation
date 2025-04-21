@@ -38,7 +38,7 @@
 | Recommendation Engine     | `Scikit-learn`, `Cosine Similarity` | Powerful similarity detection without ratings |
 | Frontend UI               | `Streamlit`                         | Lightweight, beautiful, and super fast        |
 | Data & Metadata           | `Pandas`, `TMDB API`                | Live movie details and posters                |
-| Persistence & Caching     | `Pickle`, Custom Cache System       | Remembers user preferences, avoids API spam   |
+| Persistence & Caching     | `Pickle`, `Custom Cache System`     | Remembers user preferences, avoids API spam   |
 
 ---
 
